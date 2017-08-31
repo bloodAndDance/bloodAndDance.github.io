@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(() => {
+      OneSignal.init({
+        appId: "c492e9cc-23cf-4122-9a03-ca8fd533eb67",
+        subdomainName: "showc7-github",
+        autoRegister: true, /* Set to true to automatically prompt visitors */
+        httpPermissionRequest: {
+          enable: true
+        },
+        notifyButton: {
+          enable: true /* Set to false to hide */
+        }
+      });
+      
+      OneSignal.sendTags({ user_id: '1' });
+    });
+  </script>
+</head>
